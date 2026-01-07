@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moodee Daily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+    <h1>Moodee - มู้ดดี 🤍</h1>
+    <p class="subtitle">ตารางสะสมอารมณ์รายวัน</p>
+
+    <div class="form">
+        <input type="date" id="dateInput">
+
+        <select id="moodInput">
+            <option value="">Your mood</option>
+            <option value="😊">😊 Happy - ดี</option>
+            <option value="😐">😐 So so - เฉย ๆ</option>
+            <option value="😢">😢 Sad - เศร้า</option>
+            <option value="😡">😡 Stress - เครียด</option>
+        </select>
+
+        <input type="text" id="noteInput" placeholder="บันทึกสั้น ๆ (ไม่บังคับ)">
+
+        <button onclick="saveMood()">บันทึก</button>
+    </div>
+
+    <div class="journey" id="journey"></div>
+
+    <button class="clear-btn" type="button" onclick="clearJourney()">🧹 เริ่มการเดินทางใหม่</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
